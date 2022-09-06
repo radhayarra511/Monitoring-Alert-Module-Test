@@ -3,7 +3,7 @@ output "display_name" {
   description = "Display Name of the created Alert "
 }
 
-output "alert_policy_id" {
-  value       = google_monitoring_alert_policy.alert_policy.alert_policy_id
+output "id" {
+  value       = google_monitoring_alert_policy.alert_policy.project.id
   description = "ID of the created Alert policy"
 }
