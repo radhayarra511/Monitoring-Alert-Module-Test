@@ -23,8 +23,8 @@ module "storage-bucket" {
 
 ## Inputs
 
-| **Name** | **Description** | **Type** | **Default** | **Required** |
-|------|-------------|------|---------|--------|
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
 | bucket\_policy\_only | Enables Bucket Policy Only access to a bucket. | `bool` | `true` | no |
 | encryption | A Cloud KMS key that will be used to encrypt objects inserted into this bucket | <pre>object({<br>    default_kms_key_name = string<br>  })</pre> | `null` | no |
 | force\_destroy | When deleting a bucket, this boolean option will delete all contained objects. If false, Terraform will fail to delete buckets which contain objects. | `bool` | `false` | no |
