@@ -5,6 +5,7 @@ This module makes it easy to create a GCS bucket, and assign basic permissions o
 
 ## **Usage**
 
+```hcl
 module "storage-bucket" {
   source                      = "git::https://gitprd.cn.ca/scm/gcpsciot/cloud-storage-module//storage-bucket?ref=tags/v1.0.1"
   for_each                    = local.buckets
@@ -16,6 +17,8 @@ module "storage-bucket" {
   versioning                  = false
   labels                      = { env = "${var.env}", purpose = each.value.purpose }
 }
+
+```hcl
 
 
 ## Inputs
