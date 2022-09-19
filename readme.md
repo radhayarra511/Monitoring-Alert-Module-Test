@@ -18,7 +18,7 @@ module "storage-bucket" {
   labels                      = { env = "${var.env}", purpose = each.value.purpose }
 }
 
-```hcl
+```
 
 
 ## Inputs
